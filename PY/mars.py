@@ -10,7 +10,7 @@ from marshmallow import Schema, fields, ValidationError, INCLUDE, EXCLUDE
 class StudentsSchema(Schema):
     name = fields.Str()
     group = fields.Str()
-    grade = fields.List(fields.Integer, required=False)
+    grade = fields.List(fields.Integer)
 
 
 def get_student(staff):
